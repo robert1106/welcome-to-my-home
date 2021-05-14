@@ -1,0 +1,34 @@
+.header_inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+.header_btn{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.container{
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo{
+  margin: 0 auto;
+}
+
+.menu{
+  padding-left: 15px;
+  &_list{
+    display: flex;
+    list-style-type: none;
+  }
+  &_list-item{
+    padding-right: 45px;
+    padding-left: 35px;
+  }
+}
