@@ -31,4 +31,7 @@
     padding-right: 45px;
     padding-left: 35px;
   }
+  &_list_link{
+    @extend %title-font;
+  }
 }
