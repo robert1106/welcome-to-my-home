@@ -1,0 +1,16 @@
+@import '../../_variables';
+
+.footer-content{
+  background: #DFDFDF;
+  ul{
+    margin: 0;
+  }
+}
+
+.footer-copyright{
+  background-color: $title;
+  color: #A1A1A1;
+  text-align: center;
+  padding: 42px 10px 41px;
+}
+

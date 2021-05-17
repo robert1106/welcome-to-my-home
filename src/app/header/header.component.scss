@@ -18,12 +18,6 @@
   }
 }
 
-.container{
-  max-width: 1110px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .logo{
   margin: 0 auto;
   .logo-icon{
@@ -38,7 +32,6 @@
   padding-left: 15px;
   &_list{
     display: flex;
-    list-style-type: none;
   }
   &_list-item{
     padding-right: 45px;

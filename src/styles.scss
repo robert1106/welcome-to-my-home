@@ -1,8 +1,22 @@
+@import '_variables';
+
 body{
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 27px;
   font-weight: 400;
+  color: $default;
+  margin: 0;
+}
+
+.container{
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+ul{
+  list-style-type: none;
 }
 
 a{
@@ -12,3 +26,4 @@ a{
 .btn{
   cursor: pointer;
 }
+
