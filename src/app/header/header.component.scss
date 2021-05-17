@@ -1,3 +1,5 @@
+@import '../../_variables';
+
 .header_inner{
   display: flex;
   justify-content: space-between;
@@ -9,6 +11,11 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  .menu-icon{
+    background: url("../../images/icon_menu.svg");
+    width: 37px;
+    height: 29px;
+  }
 }
 
 .container{
@@ -19,6 +26,12 @@
 
 .logo{
   margin: 0 auto;
+  .logo-icon{
+    background: url("../../images/logo.png");
+    width: 97px;
+    height: 31px;
+    display: block;
+  }
 }
 
 .menu{
@@ -31,7 +44,10 @@
     padding-right: 45px;
     padding-left: 35px;
   }
-  &_list_link{
+  &_list-link{
     @extend %title-font;
+    color: rgba(54, 56, 56, 0.9);
+    line-height: 22px;
   }
 }
+
