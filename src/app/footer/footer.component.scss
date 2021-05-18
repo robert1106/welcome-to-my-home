@@ -2,15 +2,28 @@
 
 .footer-content{
   background: #DFDFDF;
-  ul{
-    margin: 0;
+  padding: 60px 0 80px;
+  .footer-inner{
+    display: flex;
+    justify-content: space-between;
   }
 }
-
+.footer-info{
+  width: 540px;
+}
+.footer-info-title{
+  color: $title;
+  @extend %title-font;
+  margin-bottom: 14px;
+  line-height: 23px;
+}
+.footer-info-text{
+  margin-bottom: 16px;
+}
 .footer-copyright{
   background-color: $title;
   color: #A1A1A1;
   text-align: center;
-  padding: 42px 10px 41px;
+  padding: 42px 0px 41px;
 }
 

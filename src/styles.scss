@@ -6,13 +6,33 @@ body{
   line-height: 27px;
   font-weight: 400;
   color: $default;
-  margin: 0;
 }
 
 .container{
   max-width: 1110px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd
+a{
+  margin: 0;
+  font-size: inherit;
 }
 
 ul{
