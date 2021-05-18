@@ -19,6 +19,43 @@
 }
 .footer-info-text{
   margin-bottom: 16px;
+  max-width: 475px;
+}
+.footer-info-email{
+  font-weight: 600;
+  font-size: 14px;
+  color: $title;
+  margin-bottom: 22px;
+  padding-left: 30px;
+  display: inline-block;
+}
+.footer-form{
+  display: flex;
+}
+.footer-form-input{
+  padding: 6px 10px 6px 18px;
+  border-radius: 21px;
+  background-color: transparent;
+  border: 1px solid rgba($title, 0.7);
+  &::placeholder{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #A1A1A1;
+  }
+  width: 100%;
+  height: 28px;
+}
+button.footer-form-button{
+  background-color: $title;
+  border: none;
+  color: #fffff0;
+  border-radius: 21px;
+  font-weight: 600;
+  padding: 6px 12px;
+  min-width: 160px;
+  margin-left: 9px;
 }
 .footer-copyright{
   background-color: $title;
