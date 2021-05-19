@@ -6,15 +6,20 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { RightsideComponent } from './rightside/rightside.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    RightsideComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

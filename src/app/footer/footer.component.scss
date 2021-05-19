@@ -28,6 +28,16 @@
   margin-bottom: 22px;
   padding-left: 30px;
   display: inline-block;
+  position: relative;
+  &::before{
+    content: '';
+    background-image: url("../../images/envelope.svg");
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 16px;
+    height: 12px;
+  }
 }
 .footer-form{
   display: flex;
@@ -56,6 +66,63 @@ button.footer-form-button{
   padding: 6px 12px;
   min-width: 160px;
   margin-left: 9px;
+}
+.footer-social{
+   width: 125px;
+   margin-right: auto;
+   margin-left: 100px;
+ }
+.footer-social-link{
+  padding-left: 28px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+  }
+}
+.footer-social-link--Facebook::before{
+  background-image: url("../../images/facebook.svg");
+}
+.footer-social-link--Instagram::before{
+  background-image: url("../../images/instagram.svg");
+  width: 14px;
+  height: 14px;
+  top: 4px;
+}
+.footer-social-link--Pinterest::before{
+  background-image: url("../../images/Pinterest.svg");
+}
+.footer-social-link--WhatsApp::before{
+  background-image: url("../../images/whatsapp.svg");
+  width: 14px;
+  height: 14px;
+  top: 4px;
+}
+.footer-social-link--Youtube::before{
+  background-image: url("../../images/youtube.svg");
+  width: 18px;
+  height: 12px;
+  top: 4px;
+}
+
+.footer-social-item,
+.footer-menu-item{
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #707070;
+}
+.footer-social-link,
+.footer-menu-link{
+  color: #707070;
+}
+.footer-menu{
+  margin-right: 60px;
+  width: 125px;
 }
 .footer-copyright{
   background-color: $title;
