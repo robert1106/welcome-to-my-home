@@ -1,15 +1,14 @@
 @import '../../_variables';
 
 .rightside-menu{
-  width: 100%;
-  max-width: 694px;
+  width: 694px;
   background-color: #fff;
   padding-top: 40px;
   .rightside-menu-close{
     border: none;
     padding: 0;
     margin-left: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     background: url("../../images/Path.svg");
     width: 26px;
     height: 26px;
@@ -23,19 +22,36 @@
     margin-bottom: 40px;
     display: inline-block;
     background: url("../../images/logo-big.png");
-
+    width: 194px;
+    height: 58px;
   }
   .rightside-menu-title{
     color: $title;
     @extend %title-font;
-
+    font-size: 36px;
+    position: relative;
+    margin-bottom: 17px;
+    padding-bottom: 17px;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 252px;
+      margin: 0 auto;
+      height: 1px;
+      background: #6D7278;
+    }
   }
   .rightside-menu-text{
     margin-bottom: 75px;
     width: 485px;
   }
   .rightside-menu-images{
-    background: red;
     max-width: 485px;
+    background: url("../../images/Rectangle.jpg");
+    width: 483px;
+    height: 374px;
   }
 }
