@@ -75,10 +75,11 @@ button.footer-form-button{
 .footer-social-link{
   padding-left: 28px;
   position: relative;
+  display: inline-block;
   &::before {
     content: '';
     position: absolute;
-    top: 3px;
+    top: 6px;
     left: 0;
     width: 16px;
     height: 16px;
@@ -91,7 +92,7 @@ button.footer-form-button{
   background-image: url("../../images/instagram.svg");
   width: 14px;
   height: 14px;
-  top: 4px;
+  top: 8px;
 }
 .footer-social-link--Pinterest::before{
   background-image: url("../../images/Pinterest.svg");
@@ -100,13 +101,13 @@ button.footer-form-button{
   background-image: url("../../images/whatsapp.svg");
   width: 14px;
   height: 14px;
-  top: 4px;
+  top: 8px;
 }
 .footer-social-link--Youtube::before{
   background-image: url("../../images/youtube.svg");
   width: 18px;
   height: 12px;
-  top: 4px;
+  top: 8px;
 }
 
 .footer-social-item,

@@ -1,0 +1,41 @@
+@import '../../_variables';
+
+.rightside-menu{
+  width: 100%;
+  max-width: 694px;
+  background-color: #fff;
+  padding-top: 40px;
+  .rightside-menu-close{
+    border: none;
+    padding: 0;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    background: url("../../images/Path.svg");
+    width: 26px;
+    height: 26px;
+  }
+  .rightside-menu-content{
+    text-align: center;
+    max-width: 485px;
+    margin: 0 auto;
+  }
+  .logo-big{
+    margin-bottom: 40px;
+    display: inline-block;
+    background: url("../../images/logo-big.png");
+
+  }
+  .rightside-menu-title{
+    color: $title;
+    @extend %title-font;
+
+  }
+  .rightside-menu-text{
+    margin-bottom: 75px;
+    width: 485px;
+  }
+  .rightside-menu-images{
+    background: red;
+    max-width: 485px;
+  }
+}
