@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-rightside',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RightsideComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private bsModalRef: BsModalRef
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  close() {
+    this.bsModalRef.hide()
   }
 
 }

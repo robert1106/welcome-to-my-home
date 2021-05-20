@@ -11,11 +11,16 @@ export class HeaderComponent implements OnInit {
 
   constructor(private modalService: BsModalService) {}
 
+  config = {
+    class: 'rightside-modal',
+    ignoreBackdropClick: false
+  };
+
   ngOnInit(): void {
   }
 
   openModal() {
-    this.modalService.show(RightsideComponent);
-  }
+    this.modalService.show(RightsideComponent, this.config);
+}
 
 }
