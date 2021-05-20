@@ -1,0 +1,37 @@
+@import '../../_variables';
+
+.top{
+  .top-slider-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-slider-img{
+    margin-left: -220px;
+    background: url("../../images/content/slider-img.png");
+    width: 703px;
+    height: 815px;
+    object-fit: cover;
+  }
+  .top-slider-info{
+    max-width: 645px;
+  }
+  .top-slider-title{
+    color: $title;
+    @extend %title-font;
+    font-size: 110px;
+    line-height: 135px;
+    padding-bottom: 26px;
+    margin-bottom: 26px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 185px;
+      height: 1px;
+      background: #6D7278;
+    }
+  }
+}
