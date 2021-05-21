@@ -1,0 +1,24 @@
+<section class="new-collection">
+  <div class="container-fluid">
+    <h3 class="new-collection-title">
+      Furniture new collection
+    </h3>
+    <p class="new-collection-text">
+      Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint
+    </p>
+    <div class="container">
+      <carousel [itemsPerSlide]="itemsPerSlide"
+                [singleSlideOffset]="singleSlideOffset"
+                [startFromIndex]="6"
+                [interval]="true">
+        <slide *ngFor="let slide of slides; let index=index">
+          <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+          <div class="carousel-caption">
+            <h4>Slide {{index}}</h4>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+
+  </div>
+</section>

@@ -5,19 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { RightsideComponent } from './rightside/rightside.component';
-import { MainComponent } from './main/main.component';
+import { ModalsComponent } from './modals/modals.component';
+import { TopMainComponent } from './top-main/top-main.component';
 
 import { CarouselModule } from "ngx-bootstrap/carousel";
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { NewcollectionMainComponent } from './newcollection-main/newcollection-main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    RightsideComponent,
-    MainComponent
+    ModalsComponent,
+    TopMainComponent,
+    NewcollectionMainComponent
   ],
   imports: [
     BrowserModule,

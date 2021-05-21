@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BsModalService } from 'ngx-bootstrap/modal';
-import { RightsideComponent } from "../rightside/rightside.component";
+import { ModalsComponent } from "../modals/modals.component";
 
 @Component({
   selector: 'app-header',
@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   constructor(private modalService: BsModalService) {}
 
   config = {
-    class: 'rightside-modal',
+    class: 'modals-modal',
     ignoreBackdropClick: false
   };
 
@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   }
 
   openModal() {
-    this.modalService.show(RightsideComponent, this.config);
+    this.modalService.show(ModalsComponent, this.config);
 }
 
 }

@@ -1,0 +1,33 @@
+@import '../styles/variables';
+
+.container-fluid{
+  max-width: 1912px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: block;
+  text-align: center;
+  .new-collection-title{
+    color: $title;
+    @extend %title-font;
+    margin-top: 30px;
+    font-size: 36px;
+    padding: 25px;
+    margin-bottom: 24px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      width: 185px;
+      height: 1px;
+      background: #6D7278;
+    }
+  }
+  .new-collection-text{
+    max-width: 730px;
+    margin: auto;
+  }
+}
