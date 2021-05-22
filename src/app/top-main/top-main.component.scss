@@ -6,7 +6,7 @@
     position: relative;
     &::after{
       content: '';
-      background-image: url("../../images/content/slider-dg.jpg");
+      background-image: url("../../assets/images/content/slider-dg.jpg");
       position: absolute;
       width: 100%;
       height: 722px;
@@ -21,7 +21,7 @@
   }
   .top-slider-img{
     margin-left: -220px;
-    background: url("../../images/content/slider-img.png");
+    background: url("../../assets/images/content/slider-img.png");
     width: 703px;
     height: 815px;
     object-fit: cover;

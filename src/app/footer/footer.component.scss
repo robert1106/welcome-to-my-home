@@ -31,7 +31,7 @@
   position: relative;
   &::before{
     content: '';
-    background-image: url("../../images/envelope.svg");
+    background-image: url("../../assets/images/envelope.svg");
     position: absolute;
     top: 8px;
     left: 0;
@@ -86,25 +86,25 @@ button.footer-form-button{
   }
 }
 .footer-social-link--Facebook::before{
-  background-image: url("../../images/facebook.svg");
+  background-image: url("../../assets/images/facebook.svg");
 }
 .footer-social-link--Instagram::before{
-  background-image: url("../../images/instagram.svg");
+  background-image: url("../../assets/images/instagram.svg");
   width: 14px;
   height: 14px;
   top: 8px;
 }
 .footer-social-link--Pinterest::before{
-  background-image: url("../../images/Pinterest.svg");
+  background-image: url("../../assets/images/Pinterest.svg");
 }
 .footer-social-link--WhatsApp::before{
-  background-image: url("../../images/whatsapp.svg");
+  background-image: url("../../assets/images/whatsapp.svg");
   width: 14px;
   height: 14px;
   top: 8px;
 }
 .footer-social-link--Youtube::before{
-  background-image: url("../../images/youtube.svg");
+  background-image: url("../../assets/images/youtube.svg");
   width: 18px;
   height: 12px;
   top: 8px;
