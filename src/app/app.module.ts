@@ -14,6 +14,8 @@ import { TopMainComponent } from './top-main/top-main.component';
 import { CarouselModule } from "ngx-bootstrap/carousel";
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NewcollectionMainComponent } from './newcollection-main/newcollection-main.component';
+import { DecorMainComponent } from './decor-main/decor-main.component';
+import { WorksMainComponent } from './works-main/works-main.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { NewcollectionMainComponent } from './newcollection-main/newcollection-m
     FooterComponent,
     ModalsComponent,
     TopMainComponent,
-    NewcollectionMainComponent
+    NewcollectionMainComponent,
+    DecorMainComponent,
+    WorksMainComponent
   ],
   imports: [
     BrowserModule,

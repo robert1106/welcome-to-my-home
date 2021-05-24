@@ -9,7 +9,7 @@ export class NewcollectionMainComponent implements OnInit {
 
   constructor() { }
 
-  itemsPerSlide = 5;
+  itemsPerSlide = 4;
   singleSlideOffset = true;
 
   slides = [

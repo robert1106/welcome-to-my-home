@@ -1,0 +1,31 @@
+@import '../styles/variables';
+
+.decor{
+  padding: 170px 0 155px;
+  background-image: url("../../assets/images/decor-images.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  .decor-title{
+    max-width: 730px;
+    color: $title;
+    @extend %title-font;
+    font-size: 60px;
+    line-height: 80px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 200px;
+      height: 1px;
+      bottom: 0;
+      background: #6D7278;
+    }
+  }
+  .decor-text{
+    max-width: 540px;
+  }
+}
