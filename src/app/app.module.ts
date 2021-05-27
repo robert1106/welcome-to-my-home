@@ -16,6 +16,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { NewcollectionMainComponent } from './newcollection-main/newcollection-main.component';
 import { DecorMainComponent } from './decor-main/decor-main.component';
 import { WorksMainComponent } from './works-main/works-main.component';
+import { GalleryMainComponent } from './gallery-main/gallery-main.component';
+import {TabsModule} from "ngx-bootstrap/tabs";
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { WorksMainComponent } from './works-main/works-main.component';
     TopMainComponent,
     NewcollectionMainComponent,
     DecorMainComponent,
-    WorksMainComponent
+    WorksMainComponent,
+    GalleryMainComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { WorksMainComponent } from './works-main/works-main.component';
     ModalModule.forRoot(),
     CarouselModule.forRoot(),
     BrowserAnimationsModule,
-    CommonModule
+    CommonModule,
+    TabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

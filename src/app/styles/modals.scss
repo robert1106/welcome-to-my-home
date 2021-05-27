@@ -17,9 +17,9 @@
 .carousel-indicators {
   z-index: 15;
   display: flex;
+  bottom: 0;
   margin-right: 0;
   margin-left: 0;
-  margin-top: 5px;
   list-style: none;
 
   li {
@@ -38,6 +38,13 @@
   }
 
 }
+
+.carousel-control-next,
+.carousel-control-prev{
+  width: 8%;
+}
+
+
 
 
 
