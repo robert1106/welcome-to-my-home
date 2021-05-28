@@ -19,6 +19,13 @@ import { WorksMainComponent } from './works-main/works-main.component';
 import { GalleryMainComponent } from './gallery-main/gallery-main.component';
 import {TabsModule} from "ngx-bootstrap/tabs";
 import { BlogBoxComponent } from './blog-box/blog-box.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
 
 @NgModule({
@@ -32,7 +39,14 @@ import { BlogBoxComponent } from './blog-box/blog-box.component';
     DecorMainComponent,
     WorksMainComponent,
     GalleryMainComponent,
-    BlogBoxComponent
+    BlogBoxComponent,
+    HomeComponent,
+    AboutComponent,
+    BlogComponent,
+    ContactComponent,
+    GalleryComponent,
+    AboutUsComponent,
+    BreadcrumbsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+@import '../styles/variables';
+
+.about{
+  background-image: url("../../assets/images/about/placeholder.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  text-align: center;
+  padding: 160px 0;
+  .about-us-title{
+    color: $title;
+    @extend %title-font;
+    font-size: 60px;
+    line-height: 80;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../styles/variables';
+
+.breadcrumbs{
+  background: rgba(#DFDFDF, .5);
+  padding: 13px 0 14px;
+  .breadcrumbs-list{
+    display: flex;
+    padding: 0;
+  }
+  .breadcrumbs-item::after{
+    content: '/';
+    margin-right: 4px;
+  }
+  .breadcrumbs-item:last-child::after{
+    display: none;
+  }
+  .breadcrumbs-link{
+    color: $default;
+    font-size: 14px;
+  }
+}
