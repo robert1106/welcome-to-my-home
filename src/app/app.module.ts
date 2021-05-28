@@ -18,6 +18,7 @@ import { DecorMainComponent } from './decor-main/decor-main.component';
 import { WorksMainComponent } from './works-main/works-main.component';
 import { GalleryMainComponent } from './gallery-main/gallery-main.component';
 import {TabsModule} from "ngx-bootstrap/tabs";
+import { BlogBoxComponent } from './blog-box/blog-box.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import {TabsModule} from "ngx-bootstrap/tabs";
     NewcollectionMainComponent,
     DecorMainComponent,
     WorksMainComponent,
-    GalleryMainComponent
+    GalleryMainComponent,
+    BlogBoxComponent
   ],
   imports: [
     BrowserModule,

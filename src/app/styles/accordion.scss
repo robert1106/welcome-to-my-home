@@ -1,0 +1,28 @@
+@import '../styles/variables';
+
+.nav {
+  padding-bottom: 40px;
+  justify-content: center;
+}
+.nav-pills .nav-link{
+  border: 1px solid rgba(#454647, 0.5);
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #8F8D8D;
+  margin: auto 13px;
+}
+.nav-pills .nav-link.active{
+  background: rgba(#FFEF35, .5);
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: $title;
+}
+.hide-bottom-btn{
+  .carousel-indicators{
+    display: none;
+  }
+}

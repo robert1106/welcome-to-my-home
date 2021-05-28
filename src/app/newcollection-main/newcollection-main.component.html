@@ -7,16 +7,17 @@
       Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint
     </p>
     <div class="collection-carousel">
-      <carousel [itemsPerSlide]="itemsPerSlide"
+      <carousel class="hide-bottom-btn"
+                [itemsPerSlide]="itemsPerSlide"
                 [singleSlideOffset]="singleSlideOffset"
                 [startFromIndex]="4"
                 [interval]=0>
-        <slide *ngFor="let slide of slides; let index=index">
+        <slide *ngFor="let slide of slides">
           <img class="collection-img" [src]="slide.image">
           <div class="carousel-caption">
             <div class="collection-info">
-              <h6 class="collection-info-title">Truffaut literally trust</h6>
-              <p class="collection-info-text">Living room furntiture | Chair</p>
+              <h6 class="collection-info-title">{{ slide.title }}</h6>
+              <p class="collection-info-text">{{ slide.description }}</p>
             </div>
           </div>
         </slide>

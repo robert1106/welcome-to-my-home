@@ -35,7 +35,9 @@
             "styles": [
               "src/styles.scss",
               "src/app/styles/_variables.scss",
-              "src/app/styles/modals.scss"
+              "src/app/styles/modals.scss",
+              "src/app/styles/slides.scss",
+              "src/app/styles/accordion.scss"
             ],
             "scripts": []
           },
