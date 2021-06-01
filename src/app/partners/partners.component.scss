@@ -5,6 +5,8 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     .partners-item{
+      margin: 0 auto;
+      max-width: 100%;
     }
   }
 }
