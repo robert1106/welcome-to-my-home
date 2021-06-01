@@ -42,20 +42,20 @@
     color: rgba(54, 56, 56, 0.9);
     line-height: 22px;
   }
-  //&_list-link-active{
-  //  padding-bottom: 4px;
-  //  position: relative;
-  //  &::after{
-  //    content: '';
-  //    position: absolute;
-  //    bottom: 0;
-  //    left: 0;
-  //    right: 0;
-  //    height: 2px;
-  //    border-radius: 1px;
-  //    background-color: rgba($title, .7);
-  //  }
-  //}
+  &_list-link:active{
+    padding-bottom: 4px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      border-radius: 1px;
+      background-color: rgba($title, .7);
+    }
+  }
 }
 
 

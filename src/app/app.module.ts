@@ -26,6 +26,9 @@ import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { AboutInspirationComponent } from './about-inspiration/about-inspiration.component';
+import { PartnersComponent } from './partners/partners.component';
+import { AboutcollectionComponent } from './aboutcollection/aboutcollection.component';
 
 
 @NgModule({
@@ -46,7 +49,10 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
     ContactComponent,
     GalleryComponent,
     AboutUsComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    AboutInspirationComponent,
+    PartnersComponent,
+    AboutcollectionComponent
   ],
   imports: [
     BrowserModule,

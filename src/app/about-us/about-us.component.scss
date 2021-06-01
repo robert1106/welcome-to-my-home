@@ -1,16 +1,56 @@
 @import '../styles/variables';
 
 .about{
-  background-image: url("../../assets/images/about/placeholder.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  text-align: center;
-  padding: 160px 0;
-  .about-us-title{
-    color: $title;
-    @extend %title-font;
-    font-size: 60px;
-    line-height: 80;
+  .about-us{
+    background-image: url("../../assets/images/about/placeholder.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+    padding: 160px 0;
+    margin-top: -54px;
+    .about-us-title{
+      color: $title;
+      @extend %title-font;
+      font-size: 60px;
+      line-height: 80px;
+    }
+  }
+  .about-content{
+    padding: 129px 0 40px;
+    .about-title{
+      color: $title;
+      @extend %title-font;
+      font-size: 36px;
+      line-height: 60px;
+      padding-bottom: 22px;
+      margin-bottom: 22px;
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        height: 1px;
+        background-color: #6D7278;
+      }
+    }
+    .about-text{
+      p{
+        padding-left: 284px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .about-popup{
+    background-image: url("../../assets/images/popup-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 414px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

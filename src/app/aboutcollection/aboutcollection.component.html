@@ -1,0 +1,21 @@
+<section class="new-collection">
+  <div class="container-fluid">
+    <div class="collection-carousel">
+      <carousel class="hide-bottom-btn"
+                [itemsPerSlide]="itemsPerSlide"
+                [singleSlideOffset]="singleSlideOffset"
+                [startFromIndex]="4"
+                [interval]=0>
+        <slide *ngFor="let slide of slides">
+          <img class="collection-img" [src]="slide.image">
+          <div class="carousel-caption">
+            <div class="collection-info">
+              <h6 class="collection-info-title">{{ slide.title }}</h6>
+              <p class="collection-info-text">{{ slide.description }}</p>
+            </div>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </div>
+</section>
