@@ -5,3 +5,22 @@ $default: #5A5A5A;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
+
+.info-email{
+  font-weight: 600;
+  font-size: 14px;
+  color: $title;
+  margin-bottom: 22px;
+  padding-left: 30px;
+  display: inline-block;
+  position: relative;
+  &::before{
+    content: '';
+    background-image: url("../../assets/images/envelope.svg");
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 16px;
+    height: 12px;
+  }
+}

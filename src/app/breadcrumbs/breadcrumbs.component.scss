@@ -3,6 +3,8 @@
 .breadcrumbs{
   background: rgba(#DFDFDF, .5);
   padding: 13px 0 14px;
+  position: relative;
+  z-index: 999;
   .breadcrumbs-list{
     display: flex;
     padding: 0;

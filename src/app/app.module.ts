@@ -29,6 +29,8 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { AboutInspirationComponent } from './about-inspiration/about-inspiration.component';
 import { PartnersComponent } from './partners/partners.component';
 import { AboutcollectionComponent } from './aboutcollection/aboutcollection.component';
+import { MapContactComponent } from './map-contact/map-contact.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 
 @NgModule({
@@ -52,7 +54,9 @@ import { AboutcollectionComponent } from './aboutcollection/aboutcollection.comp
     BreadcrumbsComponent,
     AboutInspirationComponent,
     PartnersComponent,
-    AboutcollectionComponent
+    AboutcollectionComponent,
+    MapContactComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
