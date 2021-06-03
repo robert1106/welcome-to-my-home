@@ -1,2 +1,28 @@
 @import '../styles/variables';
 
+.contact{
+  padding-bottom: 100px;
+  .contact-title{
+    color: $title;
+    @extend %title-font;
+    font-size: 36px;
+    padding-bottom: 35px;
+    margin-bottom: 40px;
+    position: absolute;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 200px;
+      background-color: #6D7278;
+    }
+  }
+  .contact-social{
+    padding-left: 284px;
+  }
+  .contact-form{
+    padding-left: 284px;
+  }
+}

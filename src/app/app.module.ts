@@ -17,7 +17,7 @@ import { NewcollectionMainComponent } from './newcollection-main/newcollection-m
 import { DecorMainComponent } from './decor-main/decor-main.component';
 import { WorksMainComponent } from './works-main/works-main.component';
 import { GalleryMainComponent } from './gallery-main/gallery-main.component';
-import {TabsModule} from "ngx-bootstrap/tabs";
+import { TabsModule } from "ngx-bootstrap/tabs";
 import { BlogBoxComponent } from './blog-box/blog-box.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -28,7 +28,6 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { AboutInspirationComponent } from './about-inspiration/about-inspiration.component';
 import { PartnersComponent } from './partners/partners.component';
-import { AboutcollectionComponent } from './aboutcollection/aboutcollection.component';
 import { MapContactComponent } from './map-contact/map-contact.component';
 import { ContactusComponent } from './contactus/contactus.component';
 
@@ -54,7 +53,6 @@ import { ContactusComponent } from './contactus/contactus.component';
     BreadcrumbsComponent,
     AboutInspirationComponent,
     PartnersComponent,
-    AboutcollectionComponent,
     MapContactComponent,
     ContactusComponent
   ],

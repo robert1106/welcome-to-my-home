@@ -42,7 +42,7 @@
     color: rgba(54, 56, 56, 0.9);
     line-height: 22px;
   }
-  &_list-link:active{
+  .is-active{
     padding-bottom: 4px;
     position: relative;
     &::after{
