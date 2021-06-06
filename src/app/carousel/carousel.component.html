@@ -1,0 +1,27 @@
+<div class="carousel">
+  <div class="container-fluid">
+    <carousel [class.hide-bottom-btn]="hideBottomIndicator"
+              [itemsPerSlide]="itemsPerSlide"
+              [singleSlideOffset]="singleSlideOffset"
+              [startFromIndex]="4"
+              [interval]=0
+              [indicatorsByChunk]="true">
+      <slide *ngFor="let slide of slides">
+        <img class="carousel-img" [src]="slide.image">
+        <div class="carousel-caption">
+          <div class="carousel-info">
+            <div class="carousel-info-first" *ngIf="itemsPerSlide <= 4; else smallTitle">
+              <h6 class="carousel-info-title-first">{{ slide.title }}</h6>
+              <p class="carousel-info-text">{{ slide.description }}</p>
+            </div>
+            <ng-template #smallTitle>
+              <div class="carousel-info-second">
+                <h6 class="carousel-info-title-second">{{ slide.title }}</h6>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</div>

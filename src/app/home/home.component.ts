@@ -9,25 +9,27 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  itemsPerSlide = 4;
+
   slides = [
     {
-      image: '../../assets/images/content/colletion-1.jpg',
+      image: '../../assets/images/content/collation-1.jpg',
       title: 'Truffaut literally trust',
       description: 'Living room furntiture | Chair'
     }, {
-      image: '../../assets/images/content/colletion-2.jpg',
+      image: '../../assets/images/content/collation-2.jpg',
       title: 'Lliterally',
       description: 'Room furntiture | Fhair'
     }, {
-      image: '../../assets/images/content/colletion-3.jpg',
+      image: '../../assets/images/content/collation-3.jpg',
       title: 'Truffaut trust',
       description: 'Living urntiture | Chair'
     }, {
-      image: '../../assets/images/content/colletion-4.jpg',
+      image: '../../assets/images/content/collation-4.jpg',
       title: 'Trust',
       description: 'Room furntiture | Chair'
     }, {
-      image: '../../assets/images/content/colletion-5.jpg',
+      image: '../../assets/images/content/collation-5.jpg',
       title: 'Literally trust',
       description: 'Chair room furntiture | Living'
     },

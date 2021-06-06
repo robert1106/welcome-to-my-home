@@ -1,0 +1,43 @@
+@import '../styles/variables';
+
+
+.blog-inner{
+  justify-content: space-between;
+  width: 350px;
+  margin-left: 30px;
+}
+.aside {
+  padding: 60px 0 100px;
+  .aside-search {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .aside-search-input {
+    padding: 6px 45px 6px 18px;
+    border: 1px solid rgba($title, .7);
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    &::placeholder {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
+      color: #A1A1A1;
+    }
+  }
+  .aside-search-btn{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 6px;
+    right: 13px;
+  }
+}
+.blog-social-list{
+  display: flex;
+  margin-bottom: 20px;
+}
+.blog-social-item + .blog-social-item{
+  padding-left: 20px;
+}

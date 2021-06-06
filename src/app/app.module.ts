@@ -13,7 +13,7 @@ import { ModalsComponent } from './modals/modals.component';
 import { TopMainComponent } from './top-main/top-main.component';
 import { CarouselModule } from "ngx-bootstrap/carousel";
 import { ModalModule } from 'ngx-bootstrap/modal';
-import { NewcollectionMainComponent } from './newcollection-main/newcollection-main.component';
+import { CarouselComponent } from './carousel/carousel.component';
 import { DecorMainComponent } from './decor-main/decor-main.component';
 import { WorksMainComponent } from './works-main/works-main.component';
 import { GalleryMainComponent } from './gallery-main/gallery-main.component';
@@ -30,6 +30,7 @@ import { AboutInspirationComponent } from './about-inspiration/about-inspiration
 import { PartnersComponent } from './partners/partners.component';
 import { MapContactComponent } from './map-contact/map-contact.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { AsideComponent } from './aside/aside.component';
 
 
 @NgModule({
@@ -39,7 +40,7 @@ import { ContactusComponent } from './contactus/contactus.component';
     FooterComponent,
     ModalsComponent,
     TopMainComponent,
-    NewcollectionMainComponent,
+    CarouselComponent,
     DecorMainComponent,
     WorksMainComponent,
     GalleryMainComponent,
@@ -54,7 +55,8 @@ import { ContactusComponent } from './contactus/contactus.component';
     AboutInspirationComponent,
     PartnersComponent,
     MapContactComponent,
-    ContactusComponent
+    ContactusComponent,
+    AsideComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,8 @@ export class AboutComponent implements OnInit {
 
   constructor() { }
 
+  itemsPerSlide = 4;
+
   slides = [
     {
       image: '../../assets/images/about/collation-1.jpg',

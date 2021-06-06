@@ -30,3 +30,8 @@
 .carousel-caption{
   padding: 0;
 }
+.hide-bottom-btn{
+  .carousel-indicators{
+    display: none;
+  }
+}
