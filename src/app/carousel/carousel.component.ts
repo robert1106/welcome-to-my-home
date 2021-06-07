@@ -10,10 +10,10 @@ export class CarouselComponent implements OnInit {
   @Input() slides: any = [];
   @Input() itemsPerSlide: number = 0;
   @Input() hideBottomIndicator: boolean = false;
+  @Input() singleSlideOffset: boolean = true;
+
 
   constructor() { }
-
-  singleSlideOffset = false;
 
   ngOnInit(): void {
   }

@@ -3,9 +3,9 @@
 .carousel-indicators {
   z-index: 15;
   display: flex;
-  bottom: 0;
   margin-right: 0;
   margin-left: 0;
+  bottom: 0;
   list-style: none;
 
   li {
@@ -35,3 +35,4 @@
     display: none;
   }
 }
+

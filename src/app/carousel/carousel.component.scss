@@ -2,7 +2,7 @@
 
 
 .carousel{
-  margin: 0 auto 72px;
+  margin: 0 auto 61px;
 }
 .carousel-img{
   width: 100%;
@@ -10,6 +10,7 @@
 }
 .carousel-caption{
   position: inherit;
+  padding-bottom: 43px;
   &:hover {
     .carousel-info {
       opacity: 1;
