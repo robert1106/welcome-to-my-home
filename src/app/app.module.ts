@@ -31,6 +31,7 @@ import { PartnersComponent } from './partners/partners.component';
 import { MapContactComponent } from './map-contact/map-contact.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AsideComponent } from './aside/aside.component';
+import { PostsComponent } from './posts/posts.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { AsideComponent } from './aside/aside.component';
     PartnersComponent,
     MapContactComponent,
     ContactusComponent,
-    AsideComponent
+    AsideComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
