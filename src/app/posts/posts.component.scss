@@ -1,3 +1,32 @@
-.posts{
-  width: 730px;
+@import '../styles/variables';
+
+.post{
+  padding-bottom: 50px;
+  .blog-item-img{
+    max-width: 794px;
+    margin-bottom: 24px;
+  }
+  .post-item {
+    color: #707070;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 9px;
+    .post-data,
+    .post-author {
+      color: inherit;
+    }
+  }
+  .post-title{
+    color: $title;
+    @extend %title-font;
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 6px;
+  }
+  .post-info{
+    font-size: 16px;
+    line-height: 27px;
+  }
 }

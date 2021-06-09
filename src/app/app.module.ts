@@ -32,6 +32,10 @@ import { MapContactComponent } from './map-contact/map-contact.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AsideComponent } from './aside/aside.component';
 import { PostsComponent } from './posts/posts.component';
+import { BlogQuoteComponent } from './blog-quote/blog-quote.component';
+import { BlogVideoComponent } from './blog-video/blog-video.component';
+import { PostCarouselComponent } from './post-carousel/post-carousel.component';
+import { NgbAlertModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -58,7 +62,10 @@ import { PostsComponent } from './posts/posts.component';
     MapContactComponent,
     ContactusComponent,
     AsideComponent,
-    PostsComponent
+    PostsComponent,
+    BlogQuoteComponent,
+    BlogVideoComponent,
+    PostCarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +74,10 @@ import { PostsComponent } from './posts/posts.component';
     CarouselModule.forRoot(),
     BrowserAnimationsModule,
     CommonModule,
-    TabsModule
+    TabsModule,
+    NgbModule,
+    NgbPaginationModule,
+    NgbAlertModule
   ],
   providers: [],
   bootstrap: [AppComponent]

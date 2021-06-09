@@ -37,7 +37,7 @@ a{
 }
 
 a:hover{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 ul{
@@ -52,3 +52,6 @@ button{
   cursor: pointer;
 }
 
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

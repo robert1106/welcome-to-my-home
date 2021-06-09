@@ -1,0 +1,22 @@
+<div class="post-carousel">
+  <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
+                [showNavigationIndicators]="showNavigationIndicators">
+    <ng-template ngbSlide *ngFor="let images of images">
+      <div class="post-carousel-img-wrapper">
+        <img [src]="images.image" alt="Random slide">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <div class="post-carousel-item">
+    <span class="post-carousel-data">August 18, 2020</span> |
+    <a class="post-carousel-author" href="#">by Ann Summers</a> |
+    <a class="post-carousel-author" href="#">Table Furniture</a>
+  </div>
+  <h3 class="post-carousel-title">
+    Semiotics fixie four dollar toast, next level woke
+  </h3>
+  <div class="post-carousel-info">
+    Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table
+  </div>
+</div>
+

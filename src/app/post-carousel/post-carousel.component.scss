@@ -1,0 +1,32 @@
+@import '../styles/variables';
+
+.post-carousel{
+  margin-top: 50px;
+  .post-carousel-img-wrapper{
+    max-width: 794px;
+    margin-bottom: 24px;
+  }
+  .post-carousel-item {
+    color: #707070;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 9px;
+    .post-carousel-data,
+    .post-carousel-author {
+      color: inherit;
+    }
+  }
+  .post-carousel-title{
+    color: $title;
+    @extend %title-font;
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 6px;
+  }
+  .post-carousel-info{
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
