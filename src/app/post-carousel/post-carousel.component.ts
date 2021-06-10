@@ -22,8 +22,6 @@ export class PostCarouselComponent implements OnInit {
   ];
 
   constructor() {
-    // config.showNavigationArrows = true;
-    // config.showNavigationIndicators = true;
   }
 
   ngOnInit(): void {
