@@ -1,11 +1,28 @@
 <div class="post-aside">
   <div class="container" style="display: flex; padding: 60px 0 100px" >
     <div class="posts-items">
-      <app-posts></app-posts>
-      <app-blog-quote></app-blog-quote>
-      <app-blog-video></app-blog-video>
-      <app-post-carousel></app-post-carousel>
-      <ngb-pagination [collectionSize]="20" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+      <div class="row">
+        <div class="col-xs-12 col-12">
+          <div class="content-wrapper">
+            <div *ngFor="let post of posts">
+              <app-posts></app-posts>
+              <app-blog-quote></app-blog-quote>
+              <app-blog-video></app-blog-video>
+              <app-post-carousel></app-post-carousel> <!--Todo-->
+              <app-posts></app-posts>
+              <app-blog-quote></app-blog-quote>
+              <app-blog-video></app-blog-video>
+              <app-post-carousel></app-post-carousel>
+              <app-posts></app-posts>
+              <app-blog-quote></app-blog-quote>
+            </div>
+          </div>
+          <pagination [totalItems]="contentArray.length" (pageChanged)="pageChanged($event)"
+                      [itemsPerPage]="itemsPerPage">
+          </pagination>
+        </div>
+      </div>
+
     </div>
     <app-aside></app-aside>
   </div>
