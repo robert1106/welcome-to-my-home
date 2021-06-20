@@ -1,0 +1,29 @@
+<div class="post" *ngIf="post.type === 'post'">
+  <app-carousel [slides]="post.blogMediaPaths"
+                [itemsPerSlide]="1"
+                [hideBottomIndicator]="true"
+                *ngIf="post.blogMediaPaths.length > 1; else image"
+                class="post-carousel">
+  </app-carousel>
+  <ng-template #image>
+    <img class="blog-item-img" *ngIf="post.blogMediaPaths.length" [src]="post.blogMediaPaths[0].image"
+         alt="blog image">
+  </ng-template>
+  <div class="post-item">
+    <span class="post-date">{{ post.createdAt }}</span> |
+    <a class="post-author" href="#">{{ post.fistAuthor }}</a> |
+    <a class="post-author" href="#">{{ post.secondAuthor }}</a>
+  </div>
+  <a href="#">
+    <h3 class="post-title">{{post.title}}</h3>
+  </a>
+  <div class="post-info">{{post.info}}</div>
+</div>
+
+<blockquote class="quote" *ngIf="post.type === 'quote'">
+  {{ post.description }}
+  <div class="quote-author">{{ post.author }}</div>
+</blockquote>
+
+<!--<app-blog-video></app-blog-video>-->
+<!--<app-post-carousel></app-post-carousel>--> <!--Todo-->

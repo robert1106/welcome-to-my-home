@@ -10,13 +10,53 @@ export class BlogComponent implements OnInit {
 
   contentArray = new Array(3).fill('');
   itemsPerPage = 1;
-  posts = [0];
+  posts = [{
+    type: 'post',
+    blogMediaPaths: [
+      {
+        image: '../../assets/images/blog/post1.svg',
+      },
+    ],
+    createdAt: 'August 15, 2020',
+    fistAuthor: 'by Ann Summers',
+    secondAuthor: 'Bedroom Furniture',
+    title: 'Red selfies edison bulb four dollar toast humblebrag for the furniture',
+    info: 'Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally ' +
+      'williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug ' +
+      'selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin ' +
+      'edison bulb farm-to-table'
+  },{
+    type: 'quote',
+    description: '“Simplicity is not the goal. It is the by-product of a good idea and modest expectations”',
+    author: 'by Ann Summers',
+  },{
+    type: 'post',
+    blogMediaPaths: [
+      {
+        image: '../../assets/images/blog/post1.svg',
+      },{
+        image: '../../assets/images/blog/blog-video.svg',
+      }, {
+        image: '../../assets/images/blog/slide-blog.svg',
+      },
+    ],
+    createdAt: 'August 15, 2020',
+    fistAuthor: 'by Ann Summers',
+    secondAuthor: 'Bedroom Furniture',
+    title: 'Red selfies edison bulb four dollar toast humblebrag for the furniture',
+    info: 'Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally ' +
+      'williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug ' +
+      'selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin ' +
+      'edison bulb farm-to-table'
+  },];
+
+
 
   constructor() { }
 
   ngOnInit(): void {
-    this.contentArray = this.contentArray.map((v: string, i: number) => `Content line ${i + 1}`);
-    this.posts = this.contentArray.slice(0, this.itemsPerPage);
+    // this.contentArray = this.contentArray.map((v: string, i: number) => `Content line ${i + 1}`);
+    // this.posts = this.contentArray.slice(0, this.itemsPerPage);
   }
 
   pageChanged(event: PageChangedEvent): void {

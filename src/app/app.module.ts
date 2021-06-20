@@ -38,6 +38,7 @@ import { PostCarouselComponent } from "./post-carousel/post-carousel.component";
 import { PostsComponent } from './posts/posts.component';
 import { TopMainComponent } from './top-main/top-main.component';
 import { WorksMainComponent } from './works-main/works-main.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { WorksMainComponent } from './works-main/works-main.component';
     PostsComponent,
     TopMainComponent,
     WorksMainComponent,
+    PostComponent,
   ],
   imports: [
     AppRoutingModule,
