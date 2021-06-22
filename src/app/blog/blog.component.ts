@@ -8,6 +8,8 @@ import { PageChangedEvent } from 'ngx-bootstrap/pagination';
 })
 export class BlogComponent implements OnInit {
 
+  constructor() { }
+
   contentArray = new Array(3).fill('');
   itemsPerPage = 1;
   posts = [{
@@ -19,7 +21,7 @@ export class BlogComponent implements OnInit {
     ],
     createdAt: 'August 15, 2020',
     fistAuthor: 'by Ann Summers',
-    secondAuthor: 'Bedroom Furniture',
+    category: 'Bedroom Furniture',
     title: 'Red selfies edison bulb four dollar toast humblebrag for the furniture',
     info: 'Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally ' +
       'williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug ' +
@@ -29,6 +31,17 @@ export class BlogComponent implements OnInit {
     type: 'quote',
     description: '“Simplicity is not the goal. It is the by-product of a good idea and modest expectations”',
     author: 'by Ann Summers',
+  },{
+    type: 'post-video',
+    blogMediaPaths: [
+      {
+        image: '../../assets/images/play_button.svg',
+      },
+    ],
+    createdAt: 'August 12, 2020',
+    fistAuthor: 'by Lux Morningstar',
+    category: 'Design',
+    title: 'Authentic kogi shabby chic'
   },{
     type: 'post',
     blogMediaPaths: [
@@ -42,7 +55,7 @@ export class BlogComponent implements OnInit {
     ],
     createdAt: 'August 15, 2020',
     fistAuthor: 'by Ann Summers',
-    secondAuthor: 'Bedroom Furniture',
+    category: 'Bedroom Furniture',
     title: 'Red selfies edison bulb four dollar toast humblebrag for the furniture',
     info: 'Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally ' +
       'williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug ' +
@@ -51,8 +64,6 @@ export class BlogComponent implements OnInit {
   },];
 
 
-
-  constructor() { }
 
   ngOnInit(): void {
     // this.contentArray = this.contentArray.map((v: string, i: number) => `Content line ${i + 1}`);

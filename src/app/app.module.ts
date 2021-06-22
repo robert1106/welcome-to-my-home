@@ -19,8 +19,6 @@ import { AppComponent } from './app.component';
 import { AsideComponent } from './aside/aside.component';
 import { BlogBoxComponent } from './blog-box/blog-box.component';
 import { BlogComponent } from './blog/blog.component';
-import { BlogQuoteComponent } from './blog-quote/blog-quote.component';
-import { BlogVideoComponent } from './blog-video/blog-video.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ContactComponent } from './contact/contact.component';
@@ -34,11 +32,9 @@ import { HomeComponent } from './home/home.component';
 import { MapContactComponent } from './map-contact/map-contact.component';
 import { ModalsComponent } from './modals/modals.component';
 import { PartnersComponent } from './partners/partners.component';
-import { PostCarouselComponent } from "./post-carousel/post-carousel.component";
-import { PostsComponent } from './posts/posts.component';
+import { PostComponent } from './post/post.component';
 import { TopMainComponent } from './top-main/top-main.component';
 import { WorksMainComponent } from './works-main/works-main.component';
-import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -49,8 +45,6 @@ import { PostComponent } from './post/post.component';
     AsideComponent,
     BlogBoxComponent,
     BlogComponent,
-    BlogQuoteComponent,
-    BlogVideoComponent,
     BreadcrumbsComponent,
     CarouselComponent,
     ContactComponent,
@@ -64,11 +58,9 @@ import { PostComponent } from './post/post.component';
     MapContactComponent,
     ModalsComponent,
     PartnersComponent,
-    PostCarouselComponent,
-    PostsComponent,
+    PostComponent,
     TopMainComponent,
     WorksMainComponent,
-    PostComponent,
   ],
   imports: [
     AppRoutingModule,

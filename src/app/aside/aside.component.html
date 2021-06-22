@@ -11,21 +11,24 @@
         Categories
       </h6>
       <ul class="blog-category-list">
-        <li class="blog-category-item">
-          <a class="blog-category-item" href="#">Dining room (1)</a>
+        <li class="blog-category-item" *ngFor="let category of categories">
+          <a class="blog-category-item" href="#">{{ category.displayName }} ({{ category.count }})</a>
         </li>
-        <li class="blog-category-item">
-          <a class="blog-category-item" href="#">Office furniture (12)</a>
-        </li>
-        <li class="blog-category-item">
-          <a class="blog-category-item" href="#">Simple interiror design (2)</a>
-        </li>
-        <li class="blog-category-item">
-          <a class="blog-category-item" href="#">Design (4)</a>
-        </li>
-        <li class="blog-category-item">
-          <a class="blog-category-item" href="#">Bedroom Furniture (1)</a>
-        </li>
+<!--        <li class="blog-category-item">-->
+<!--          <a class="blog-category-item" href="#">Dining room (1)</a>-->
+<!--        </li>-->
+<!--        <li class="blog-category-item">-->
+<!--          <a class="blog-category-item" href="#">Office furniture (12)</a>-->
+<!--        </li>-->
+<!--        <li class="blog-category-item">-->
+<!--          <a class="blog-category-item" href="#">Simple interiror design (2)</a>-->
+<!--        </li>-->
+<!--        <li class="blog-category-item">-->
+<!--          <a class="blog-category-item" href="#">Design (4)</a>-->
+<!--        </li>-->
+<!--        <li class="blog-category-item">-->
+<!--          <a class="blog-category-item" href="#">Bedroom Furniture (1)</a>-->
+<!--        </li>-->
       </ul>
     </div>
     <div class="recent-posts">

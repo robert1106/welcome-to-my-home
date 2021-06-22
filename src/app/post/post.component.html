@@ -12,12 +12,12 @@
   <div class="post-item">
     <span class="post-date">{{ post.createdAt }}</span> |
     <a class="post-author" href="#">{{ post.fistAuthor }}</a> |
-    <a class="post-author" href="#">{{ post.secondAuthor }}</a>
+    <a class="post-author" href="#">{{ post.category }}</a>
   </div>
   <a href="#">
-    <h3 class="post-title">{{post.title}}</h3>
+    <h3 class="post-title">{{ post.title }}</h3>
   </a>
-  <div class="post-info">{{post.info}}</div>
+  <div class="post-info">{{ post.info }}</div>
 </div>
 
 <blockquote class="quote" *ngIf="post.type === 'quote'">
@@ -25,5 +25,18 @@
   <div class="quote-author">{{ post.author }}</div>
 </blockquote>
 
-<!--<app-blog-video></app-blog-video>-->
-<!--<app-post-carousel></app-post-carousel>--> <!--Todo-->
+<div class="blog-video" *ngIf="post.type === 'post-video'">
+  <div class="blog-video-popup">
+    <a class="blog-video-popup-play" href="#">
+      <img class="blog-video-imgbtn" [src]="post.blogMediaPaths[0].image">
+    </a>
+  </div>
+  <div class="blog-video-item">
+    <span class="blog-video-data">{{ post.createdAt }}</span> |
+    <a class="blog-video-author" href="#">{{ post.fistAuthor }}</a> |
+    <a class="blog-video-author" href="#">{{ post.category }}</a>
+  </div>
+  <a href="#">
+    <h3 class="blog-video-title">{{ post.title }}</h3>
+  </a>
+</div>
