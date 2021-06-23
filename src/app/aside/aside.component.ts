@@ -67,23 +67,27 @@ export class AsideComponent implements OnInit {
   }
 
   activate(){
-    // this.categories = this.getCategories();
+    this.categories = this.getCategories();
   };
 
-  // getCategories(){
-  //   let categories = [];
-  //   for(let post of this.posts) {
-  //     if(){ //post.category !== categories[1].displayName
-  //       categories.push({
-  //         displayName: post.category,
-  //         count: 1
-  //       });
-  //     }else{
-  //       categories[i].count += 1; //index
-  //
-  //     }
-  //   }
-  //   return categories;
-  // };
-
+  getCategories(){
+    let categories = [];
+    let index = 0;
+    for(let post of this.posts) {
+      if(post.type !== 'quote'){
+        let categoriesDisplayName = [];
+        categoriesDisplayName = categories.map((category) => { return category.displayName; });
+        index = categoriesDisplayName.indexOf(post.category);
+        if(index == -1){
+          categories.push({
+            displayName: post.category,
+            count: 1
+          });
+        }else{
+          categories[index].count += 1;
+        }
+      }
+    }
+    return categories;
+  };
 }
