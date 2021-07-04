@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-aside',
@@ -75,9 +75,7 @@ export class AsideComponent implements OnInit {
     let index = 0;
     for(let post of this.posts) {
       if(post.type !== 'quote'){
-        let categoriesDisplayName = [];
-        categoriesDisplayName = categories.map((category) => { return category.displayName; });
-        index = categoriesDisplayName.indexOf(post.category);
+        index = categories.map((category) => { return category.displayName; }).indexOf(post.category);
         if(index == -1){
           categories.push({
             displayName: post.category,
