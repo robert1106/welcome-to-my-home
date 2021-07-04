@@ -14,10 +14,12 @@
   .blog-box-items{
     display: flex;
     justify-content: center;
+    .blog-box-item:first-child{
+      margin-right:30px;
+    }
     .blog-box-item{
-      margin: 0 15px;
       .blog-box-img{
-        max-width: 540px;
+        width: 525px;
         margin-bottom: 19px;
       }
       .blog-box-links{
