@@ -35,6 +35,7 @@ import { PartnersComponent } from './partners/partners.component';
 import { PostComponent } from './post/post.component';
 import { TopMainComponent } from './top-main/top-main.component';
 import { WorksMainComponent } from './works-main/works-main.component';
+import { PostActiveComponent } from './post-active/post-active.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { WorksMainComponent } from './works-main/works-main.component';
     PostComponent,
     TopMainComponent,
     WorksMainComponent,
+    PostActiveComponent,
   ],
   imports: [
     AppRoutingModule,
