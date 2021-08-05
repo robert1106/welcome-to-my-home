@@ -158,7 +158,7 @@ export class BlogComponent implements OnInit {
 
 
   ngOnInit(): void {
-    console.log(this.sum());
+    console.log(this.sum(1, 2));
   }
 
   pageChanged(event: PageChangedEvent): void {
@@ -167,9 +167,8 @@ export class BlogComponent implements OnInit {
     this.posts = this.contentArray.slice(startItem, endItem);
   }
 
-  sum() {
-    const a = 1;
-    const b = 2;
+
+  sum(a: number, b: number){
     return a+b;
   }
 
