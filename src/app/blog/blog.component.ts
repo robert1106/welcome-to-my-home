@@ -12,7 +12,7 @@ export class BlogComponent implements OnInit {
 
   a = 1;
   b = 2;
-
+  sum = this.a + this.b;
 
   contentArray = new Array(3).fill('');
 
@@ -160,10 +160,8 @@ export class BlogComponent implements OnInit {
 
 
   ngOnInit(): void {
-    function sum(x: number, y: number): number{
-      return x + y;
-    };
-    console.log(sum(this.a,this.b));
+
+    console.log(this.sum);
   }
 
   pageChanged(event: PageChangedEvent): void {
