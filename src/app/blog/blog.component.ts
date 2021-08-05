@@ -10,6 +10,8 @@ export class BlogComponent implements OnInit {
 
   constructor() { }
 
+
+
   contentArray = new Array(3).fill('');
 
   itemsPerPage = 1;
@@ -156,13 +158,18 @@ export class BlogComponent implements OnInit {
 
 
   ngOnInit(): void {
-
+    console.log(this.sum(1, 2));
   }
 
   pageChanged(event: PageChangedEvent): void {
     const startItem = (event.page - 1) * event.itemsPerPage;
     const endItem = event.page * event.itemsPerPage;
     this.posts = this.contentArray.slice(startItem, endItem);
+  }
+
+
+  sum(a: number, b: number){
+    return a+b;
   }
 
 }
