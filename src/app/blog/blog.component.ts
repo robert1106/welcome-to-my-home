@@ -10,6 +10,10 @@ export class BlogComponent implements OnInit {
 
   constructor() { }
 
+  a = 1;
+  b = 2;
+  sum = this.a + this.b;
+
   contentArray = new Array(3).fill('');
 
   itemsPerPage = 1;
@@ -157,6 +161,7 @@ export class BlogComponent implements OnInit {
 
   ngOnInit(): void {
 
+    console.log(this.sum);
   }
 
   pageChanged(event: PageChangedEvent): void {
