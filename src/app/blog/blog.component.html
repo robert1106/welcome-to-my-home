@@ -1,18 +1,25 @@
 <div class="post-aside">
   <div class="container" style="display: flex; padding-top: 60px; padding-bottom: 100px" >
     <div class="posts-items">
-      <app-post-active></app-post-active>
+<!--      <app-post-active></app-post-active>-->
 
       <div class="row">
         <div class="col-xs-12 col-12">
+<!--          <div class="content-wrapper">-->
+<!--            <div *ngFor="let post of posts">-->
+<!--              <app-post [post]="post"></app-post>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <pagination [totalItems]="contentArray.length" (pageChanged)="pageChanged($event)"-->
+<!--                      [itemsPerPage]="itemsPerPage">-->
+<!--          </pagination>-->
           <div class="content-wrapper">
-            <div *ngFor="let post of posts">
-              <app-post [post]="post"></app-post>
+            <div class="content-item" *ngFor="let content of returnedArray">
+              <app-post [post]="content"></app-post>
             </div>
           </div>
-          <pagination [totalItems]="contentArray.length" (pageChanged)="pageChanged($event)"
-                      [itemsPerPage]="itemsPerPage">
-          </pagination>
+          <pagination [totalItems]="posts.length" (pageChanged)="pageChanged($event)"></pagination>
+
         </div>
       </div>
 
