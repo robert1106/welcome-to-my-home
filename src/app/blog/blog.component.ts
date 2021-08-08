@@ -12,6 +12,8 @@ export class BlogComponent implements OnInit {
 
   returnedArray: any = [];
 
+  itemsPerPage = 4;
+
   posts = [{
     type: 'post',
     blogMediaPaths: [
@@ -156,14 +158,12 @@ export class BlogComponent implements OnInit {
 
   ngOnInit(): void {
     this.returnedArray = this.posts.slice(0, 4);
-    console.log(this.posts.length);
   }
 
   pageChanged(event: PageChangedEvent): void {
     const startItem = (event.page - 1) * event.itemsPerPage;
     const endItem = event.page * event.itemsPerPage;
     this.returnedArray = this.posts.slice(startItem, endItem);
-    console.log(this.posts.length);
   }
 
 }

@@ -18,7 +18,8 @@
               <app-post [post]="content"></app-post>
             </div>
           </div>
-          <pagination [totalItems]="posts.length" (pageChanged)="pageChanged($event)"></pagination>
+          <pagination [totalItems]="posts.length" (pageChanged)="pageChanged($event)"
+                      [itemsPerPage]="itemsPerPage"></pagination>
 
         </div>
       </div>
